@@ -26,7 +26,7 @@ const Home = () => {
   const homeHeroData = {
     title: "Best AI Company Delivering Future-Ready Solutions & Career-Defining AI/ML Internship",
     subtitle: "INAI Worlds is proudly recognized among the best AI companies building India's next generation of AI tech.We build innovative AI solutions powered by machine learning, deep learning, generative AI and NLP creating AI products that deliver real-world impact.",
-    tagline: "Innovative AI Tool to Streamline",
+    tagline: "",
     buttons: [
       {
         text: "Contact Us",
@@ -155,7 +155,7 @@ const Home = () => {
         {/* <Reviews /> */}
         {/* <ArchitectsSection /> */}
         <FAQ />
-        {/* <BlogSectionHome /> */}
+        <BlogSectionHome />
       </div>
     </>
   );

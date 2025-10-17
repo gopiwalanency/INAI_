@@ -7,7 +7,7 @@ const DropdownArrow = () => (
   <svg width="14" height="14" viewBox="0 0 20 20" fill="none" style={{ marginLeft: 6, verticalAlign: 'middle' }}><path d="M6 8l4 4 4-4" stroke="#a084e8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg>
 );
 
-const Dropdown = ({ label, to, links, isOpen, onToggle, dropdownKey, closeMenu }) => (
+const Dropdown = ({ label, to, links, isOpen, onToggle, dropdownKey, closeMenu, disabled = false }) => (
   <li
     className={`dropdown${isOpen ? ' open' : ''}`}
     onMouseEnter={() => !window.matchMedia('(max-width: 900px)').matches && onToggle(dropdownKey)}
@@ -27,12 +27,12 @@ const Dropdown = ({ label, to, links, isOpen, onToggle, dropdownKey, closeMenu }
         if (e.key === 'Enter' || e.key === ' ') onToggle(isOpen ? null : dropdownKey);
       }}
     >
-      {to ? (
+      {(!disabled && to) ? (
         <NavLink to={to} className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
           {label}
         </NavLink>
       ) : (
-        <span className="nav-link">{label}</span>
+        <span className="nav-link" aria-disabled="true">{label}</span>
       )}
       <DropdownArrow />
     </span>
@@ -101,6 +101,7 @@ const Header = () => {
               <Dropdown
                 label="Process"
                 to="/process"
+                disabled={true}
                 links={serviceLinks}
                 isOpen={openDropdown === 'process'}
                 onToggle={setOpenDropdown}
@@ -122,7 +123,7 @@ const Header = () => {
               /> */}
 
               {/* <Dropdown label="Portfolios" to="/portfolio" links={portfolioLinks} isOpen={openDropdown === 'portfolio'} onToggle={setOpenDropdown} dropdownKey="portfolio" /> */}
-              <Dropdown label="Products" to="/inai-verse" links={productsLinks} isOpen={openDropdown === 'products'} onToggle={setOpenDropdown} dropdownKey="products" closeMenu={() => setIsMenuOpen(false)} />
+              <Dropdown label="Products" to="/inai-verse" links={productsLinks} disabled={true} isOpen={openDropdown === 'products'} onToggle={setOpenDropdown} dropdownKey="products" closeMenu={() => setIsMenuOpen(false)} />
               <li><NavLink to="/blog" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"} onClick={toggleMenu}>Blog</NavLink></li>
               <li><NavLink to="/team" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"} onClick={toggleMenu}>Team</NavLink></li>
               {/* <li><NavLink to="/career" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"} onClick={toggleMenu}>Career</NavLink></li> */}

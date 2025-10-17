@@ -126,20 +126,20 @@ const Contact = () => {
 
             <div className="contact-info-list">
               <div className="contact-info-item">
-                <IoLocationOutline className="contact-info-icon" />
+                {/* <IoLocationOutline className="contact-info-icon" />
                 <div className="contact-info-content">
                   <strong>Head Office</strong>
                   <p>520, MBH, Sarthana Jakat Naka, Surat, Gujarat 395006</p>
-                </div>
+                </div> */}
               </div>
 
               <div className="contact-info-item">
-                <IoLocationOutline className="contact-info-icon" />
+                {/* <IoLocationOutline className="contact-info-icon" />
                 <div className="contact-info-content">
                   <strong>Branch 1</strong>
                   <p>C2,1114,IT park , Mota varachha
                     surat, Gujarat 394101</p>
-                </div>
+                </div> */}
               </div>
 
               

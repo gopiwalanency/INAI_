@@ -20,16 +20,7 @@ const Footer = () => {
             <div className="footer-column">
               <img src={INAILogo} alt="INAI WORLDS Logo" className="footer-logo" />
               {/* <h3 className="footer-heading">INAI WORLDS</h3> */}
-              <p className="footer-text">
-                <strong>Head Office :</strong><br />
-                520, MBH - 1, Sarthana Jakat Naka, <br />
-                 Surat, Gujarat 395006
-              </p>
-              <p className="footer-text">
-                <strong>Branch 1 :</strong><br />
-                C2,1114, IT park , Mota varachha
-                surat, Gujarat 394101
-              </p>
+           
               <p className="footer-text">
                 <strong>Email:</strong> info@inaiworlds.com
               </p>

@@ -33,6 +33,18 @@
   text-align: left;
 }
 
+/* Ensure blog highlighted text is visible and not text-clipped by global styles */
+.blog-highlight {
+  background: linear-gradient(90deg, rgba(138, 43, 226, 0.8), rgba(199, 21, 133, 0.8));
+  padding: 8px 18px;
+  border-radius: 50px;
+  display: inline-block;
+  color: #fff !important;
+  -webkit-background-clip: initial !important;
+  -webkit-text-fill-color: initial !important;
+  background-clip: initial !important;
+}
+
 .view-all-btn {
   background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
   color: #181926;

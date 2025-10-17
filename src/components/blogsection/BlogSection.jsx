@@ -100,7 +100,7 @@ const BlogSection = () => (
   <section className="blog-section">
     <div className="blog-container">
       <div className="blog-header-wrapper">
-        <h2 className="blog-heading">Latest from Our <span className="highlight-text">AI Blogs</span></h2>
+        <h2 className="blog-heading">Latest from Our <span className="blog-highlight">AI Blogs</span></h2>
 
       </div>
       <div className="blog-grid">
