@@ -155,7 +155,7 @@ const Home = () => {
         {/* <Reviews /> */}
         {/* <ArchitectsSection /> */}
         <FAQ />
-        <BlogSectionHome />
+        {/* <BlogSectionHome /> */}
       </div>
     </>
   );

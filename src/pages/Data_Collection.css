@@ -554,26 +554,27 @@
   border-radius: 24px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 2.5rem;
-  min-height: 450px;
-  height: 450px;
+  min-height: 500px;
   box-shadow:
     0 10px 40px rgba(0, 0, 0, 0.3),
     inset 0 1px 0 rgba(255, 255, 255, 0.1);
   transform-origin: top center;
+  margin-bottom: 2rem;
 }
 
 .sticky-card-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
-  align-items: center;
-  height: 100%;
+  align-items: start;
 }
 
 .sticky-card-content {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  overflow: visible;
+  max-height: none;
 }
 
 .sticky-card-image {
@@ -613,7 +614,7 @@
   font-size: 1.5rem;
   font-weight: 700;
   color: #fff;
-  margin: 0;
+  margin: 0 0 1rem 0;
   line-height: 1.4;
 }
 
@@ -622,6 +623,8 @@
   color: #cbd5e1;
   font-size: 1rem;
   line-height: 1.6;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .sticky-card-details ul {
@@ -653,6 +656,7 @@
   .sticky-card {
     top: calc(180px + var(--card-index) * 20px);
     padding: 1.5rem;
+    min-height: auto;
   }
 
   .sticky-scroll-section {
@@ -962,7 +966,9 @@
 .webscraping-page .sticky-cards-container>p {
   color: #ffffff;
   text-align: center;
-  margin-top: 12rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  padding: 0 2rem;
   font-size: 1.1rem;
   line-height: 1.6;
 }

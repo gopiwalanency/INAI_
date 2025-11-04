@@ -40,10 +40,20 @@ export const metaConfig = {
         description: 'INAI Worlds uses data manipulation to prepare AI modules and teaches these essential skills in hands-on AI/ML internships for real-world experience.',
         // keywords: 'Data Manipulation, Data Cleaning, Data Processing, Data Transformation, Data Analysis'
     },
+    dataStructuring: {
+        title: 'Data Structuring for AI & ML Development | INAI Worlds',
+        description: 'Efficient data structuring for AI & ML development. Transform raw collected information into formats for machine learning, enabling accurate AI model training and deployment.',
+        // keywords: 'Data Structuring, Data Organization, AI Data Preparation, ML Data Formatting, Structured Data'
+    },
     modelTraining: {
         title: 'AI Model Training for Generative AI and ML | INAI Worlds',
         description: 'AI model training at INAI Worlds focuses on generative AI and ML, building smarter, more powerful models to fuel real-world applications and innovations.',
         // keywords: 'Model Training, Machine Learning, AI Models, Deep Learning, Predictive Modeling'
+    },
+    dataCollection: {
+        title: 'Data Collection for AI & ML | Reliable Data Sources | INAI Worlds',
+        description: 'Reliable data collection for AI & ML models. High-quality data ensures AI models perform accurately, make informed decisions, and remain unbiased.',
+        // keywords: 'Data Collection, AI Data Gathering, ML Data Sources, Web Scraping, Data Extraction'
     },
     internship: {
         title: 'AI/ML Internship in Surat | INAI Worlds',

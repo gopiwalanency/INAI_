@@ -72,15 +72,15 @@ const Header = () => {
   ];
   const portfolioLinks = [
     // { to: '/portfolio/inai-life', label: 'INAI_VERSE' },
-    { to: '/portfolio/influwket', label: 'INFLUWKET' },
-    { to: '/portfolio/veedket', label: 'VEEDKET' },
+    { to: '/influwket', label: 'INFLUWKET' },
+    { to: '/veedket', label: 'VEEDKET' },
     { to: '/portfolio/offiket', label: 'OFFIKET' },
   ];
   const productsLinks = [
     { to: '/inai-verse', label: 'INAI VERSE' },
     { to: '/tokenizer', label: 'TOKENIZER' },
-    { to: '/portfolio/influwket', label: 'INFLUWKET' },
-    { to: '/portfolio/veedket', label: 'VEEDKET' },
+    { to: '/influwket', label: 'INFLUWKET' },
+    { to: '/veedket', label: 'VEEDKET' },
     { to: '/portfolio/offiket', label: 'OFFIKET' },
   ];
 

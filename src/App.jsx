@@ -16,8 +16,6 @@ import DataCollection from './pages/Data_Collection.jsx'
 import Data_manipulation from './pages/Data_manipulation';
 import Model_training from './pages/Model_training';
 import INAIWorldsBestAICompany1 from './pages/INAIWorldsBestAICompany1';
-import INAIWorldsBestAICompany2 from './pages/INAIWorldsBestAICompany2';
-import INAIWorldsBestAICompany3 from './pages/INAIWorldsBestAICompany3';
 import What_is_AI from './pages/What_is_AI';
 import What_is_ML from './pages/What_is_ML';
 import What_is_web_scraping from './pages/What_is_web_scraping';
@@ -118,7 +116,7 @@ function App() {
               </PageWrapper>
             } />
             <Route path="/data-structuring" element={
-              <PageWrapper pageKey="dataManipulation">
+              <PageWrapper pageKey="dataStructuring">
                 <Data_manipulation />
               </PageWrapper>
             } />
@@ -132,17 +130,17 @@ function App() {
                 <Inai_life />
               </PageWrapper>
             } />
-            <Route path="/portfolio/veedket" element={
+            <Route path="/veedket" element={
               <PageWrapper pageKey="portfolio">
                 <Veedket />
               </PageWrapper>
             } />
-            <Route path="/portfolio/offiket" element={
+            <Route path="/offiket" element={
               <PageWrapper pageKey="portfolio">
                 <Offiket />
               </PageWrapper>
             } />
-            <Route path="/portfolio/influwket" element={
+            <Route path="/influwket" element={
               <PageWrapper pageKey="portfolio">
                 <Influwket />
               </PageWrapper>
@@ -227,16 +225,8 @@ function App() {
                 <INAIWorldsBestAICompany1 />
               </PageWrapper>
             } />
-            <Route path="/ai-company-surat" element={
-              <PageWrapper pageKey="company">
-                <INAIWorldsBestAICompany2 />
-              </PageWrapper>
-            } />
-            <Route path="/ai-company-ahmedabad" element={
-              <PageWrapper pageKey="company">
-                <INAIWorldsBestAICompany3 />
-              </PageWrapper>
-            } />
+         
+           
             <Route path="/tokenizer" element={
               <PageWrapper pageKey="company">
                 <Token />
@@ -247,11 +237,11 @@ function App() {
                 <InaiVerse />
               </PageWrapper>
             } />
-            <Route path="/career" element={
+            {/* <Route path="/career" element={
               <PageWrapper pageKey="company">
                 <Career />
               </PageWrapper>
-            } />
+            } /> */}
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>

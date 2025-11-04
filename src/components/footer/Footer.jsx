@@ -22,7 +22,7 @@ const Footer = () => {
               {/* <h3 className="footer-heading">INAI WORLDS</h3> */}
            
               <p className="footer-text">
-                <strong>Email:</strong> info@inaiworlds.com
+                <strong>Email: </strong> info@inaiworlds.com
               </p>
               {/* <p className="footer-text">
                 <strong>Phone:</strong> +91 70164 88265
@@ -35,9 +35,19 @@ const Footer = () => {
               <ul className="footer-links-list">
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/about">About US</Link></li>
-                <li><Link to="/portfolio">Portfolio</Link></li>
-                <li><Link to="/services">Services</Link></li>
                 <li><Link to="/contact">Contact</Link></li>
+              </ul>
+            </div>
+
+            {/* Column: Products */}
+            <div className="footer-column">
+              <h3 className="footer-heading">Products</h3>
+              <ul className="footer-links-list">
+                <li><Link to="/inai-verse">Inai-verse</Link></li>
+                <li><Link to="/tokenizer">Tokenizer</Link></li>
+                <li><Link to="/portfolio/influwket">Influwket</Link></li>
+                <li><Link to="/veedket">Veedket</Link></li>
+                <li><Link to="/portfolio/offiket">Offiket</Link></li>
               </ul>
             </div>
 

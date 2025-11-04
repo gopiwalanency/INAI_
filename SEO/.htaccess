@@ -1,0 +1,10 @@
+# Enable Rewrite Engine
+RewriteEngine On
+
+# Make sure we’re in the right directory
+RewriteBase /
+
+# Redirect all to https://inaiworlds.com/
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\. [NC]
+RewriteRule ^(.*)$ https://inaiworlds.com/$1 [L,R=301]

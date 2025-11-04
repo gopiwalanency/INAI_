@@ -457,9 +457,11 @@ const Service2 = () => {
         </div>
 
         {/* Why Data Structuring Matters Section */}
-      <p className="scrap_text" style={{ marginTop: 16, textAlign: 'center' }}>
-        Before this step, every project begins with Reliable <strong style={{ color: 'skyblue' }}>Data Collection for AI & ML</strong>, where we gather high-quality raw information. Once collected, structuring prepares it for seamless integration into AI models
-      </p>
+        <div className="scrap_text" style={{ marginTop: '3rem', textAlign: 'center', padding: '0 2rem' }}>
+          <p style={{ fontSize: '1.1rem', lineHeight: '1.6', color: '#ffffff' }}>
+            Before this step, every project begins with Reliable <strong style={{ color: 'skyblue' }}>Data Collection for AI & ML</strong>, where we gather high-quality raw information. Once collected, structuring prepares it for seamless integration into AI models.
+          </p>
+        </div>
         <div className="scrolling-section">
           <h2 className="gradient-heading">Why Data Structuring Matters</h2>
           <p>Structured data directly impacts the accuracy, efficiency, and scalability of AI models:</p>

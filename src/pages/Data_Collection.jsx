@@ -262,7 +262,7 @@ const WebScraping = () => {
   return (
     <>
       <SEO
-        title="What Is Web Scraping? Ultimate Beginner's Guide | INAI Worlds"
+        title="What Is Data collection ? Ultimate Beginner's Guide | INAI Worlds"
         description="Discover what web scraping is, how it works, and why it's essential for data collection. Learn beginner-friendly techniques in this INAI Worlds blog."
       />
 

@@ -143,9 +143,10 @@
 
 .footer-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
-  justify-items: center;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 4rem;
+  row-gap: 2rem;
+  justify-items: start;
 }
 
 .footer-column {
@@ -238,7 +239,7 @@
   display: flex;
   gap: 1rem;
   margin-top: 1.5rem;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .footer-social-btn {
